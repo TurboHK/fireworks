@@ -2,6 +2,7 @@
 <html lang="en">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@700&display=swap" rel="stylesheet">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
@@ -39,7 +40,7 @@
     <audio id="audioDom" src="https://download.kstore.space/download/2719/newyear/files/audio.mp3" preload="auto" loop="loop"></audio>
 
     <div id="yhBtn" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:999;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff ; font-size:20px;font-family: 'Roboto Mono', monospace">
-        <p>💥 Click to start 💥</p>
+        <p>💥 Click to start 💥<br>⚠ 警告：此頁面包含音效 ⚠</p>
         <img style="width:64px;margin-bottom:36px " src="files/boom.png">
     </div>
 
@@ -78,8 +79,8 @@
         </div>
         <div class="stage-container remove">
             <div class="page_two hide">
-                <div id="text" style="display:none;font-family: 'Roboto Mono', monospace"><p>NOTE<br><br>When the programmed fireworks are over,<br>you can tap anywhere on the screen,<br>and the fireworks would be set off there.<br><br>Now,<br>enjoy the fireworks!<br><br><br><a href="https://github.com/TurboHK/fireworks" style="color:#ffffff;">Source code (GitHub)</a></p></div>
-                <div class="type_words" id="contents" style="font-size:1.15rem;line-height:1.5rem;font-family: 'Roboto Mono', monospace"></div>
+                <div id="text" style="display:none; font-family: 'Noto Serif HK', serif;"><p>新年快樂！<br><br>點按螢幕之任意位置，煙火即在那裡燃放。<br>PC 端按 F11 可全屏檢視。<br><a href="https://github.com/TurboHK/fireworks" style="color:#ffffff;">按此檢視源代碼</a></p></div>
+                <div class="type_words" id="contents" style="font-size:1.15rem;line-height:1.5rem; font-family: 'Noto Serif HK', serif;"></div>
             </div>
             <div class="canvas-container">
                 <canvas id="trails-canvas"></canvas>
@@ -253,7 +254,7 @@
     var diff2Minutes = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours) / minutes)
     var diff2Seconds = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours - diff2Minutes *
         minutes) / seconds)
-     if(todayMonth==1){if(todayDate==1){document.getElementById("text1").innerHTML =  +todayYear+"新年快乐！"}}
+     if(todayMonth==1){if(todayDate==1){document.getElementById("text1").innerHTML =  +todayYear+"新年快樂！"}}
 }
 time()
 </script>
